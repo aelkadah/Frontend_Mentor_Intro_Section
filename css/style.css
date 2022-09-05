@@ -221,7 +221,7 @@ header .side-nav ul .dropBox {
   display: none;
   padding: 5px 0px;
 }
-header .side-nav ul .dropBox li img {
+header .side-nav ul.dropBox li img {
   padding-right: 5px;
 }
 header .side-nav .btns {
