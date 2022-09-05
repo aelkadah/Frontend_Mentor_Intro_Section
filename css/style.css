@@ -240,7 +240,7 @@ header .side-nav ul .dropBox {
   padding: 5px 0px;
 }
 header .side-nav ul.dropBox li img {
-  padding-right: 5px;
+  padding-right: 1px;
 }
 header .side-nav .btns {
   display: flex;
