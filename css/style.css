@@ -132,6 +132,9 @@ header .nav-btns ul.dropBox {
 ul.dropBox.active {
   display: block !important ;
 }
+ul.dropBox li {
+  padding: 10px 15px !important;
+}
 ul.dropBox li img {
   padding-right: 10px;
 }
