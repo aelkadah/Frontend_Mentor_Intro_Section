@@ -14,7 +14,9 @@ html {
 }
 body {
   font-family: "Epilogue", sans-serif;
-  background-color: var(--almostWhite);
+  min-height: 100vh;
+  /* background-color: var(--almostWhite); */
+  /* background-color: tomato; */
 }
 h1,
 h2,
@@ -49,6 +51,21 @@ p {
     width: 1170px;
   }
 }
+
+.filledBtn {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.filledBtn:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+
 header {
   background-color: var(--almostWhite);
   margin: 0;
@@ -101,6 +118,7 @@ header .nav .dropdownLi:hover a::before {
 }
 header .nav-btns ul.dropBox {
   position: absolute;
+  z-index: 10;
   background: white;
   width: max-content;
   border-radius: 10px;
@@ -235,7 +253,92 @@ header .btns a {
 }
 
 #landing {
+  position: relative;
   margin: 0;
-  /* min-height: 100vh; */
-  /* background-color: firebrick; */
+}
+#landing .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  padding: 20px 0;
+}
+#landing .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+#landing .content .text {
+  margin-top: 70px;
+}
+.text h1 {
+  width: 70%;
+  font-size: 60px;
+  font-weight: 700;
+}
+.text p {
+  color: var(--mediumGray);
+  line-height: 1.6;
+  width: 80%;
+  margin: 20px 0 30px 0;
+}
+
+#landing .content h2 {
+  position: absolute;
+  top: 95%;
+}
+#landing .image {
+  text-align: right;
+}
+#landing .image img {
+  width: 60%;
+}
+#landing .mobile {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  #landing .container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  #landing .content .text {
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 10px;
+  }
+  #landing .text h1 {
+    width: 100%;
+    font-size: 38px;
+  }
+  #landing .text p {
+    width: 100%;
+  }
+  #landing .text a {
+    margin: 0;
+  }
+  #landing .image {
+    text-align: center;
+  }
+  #landing .image .desktop {
+    display: none;
+  }
+  #landing .image .mobile {
+    display: block;
+    width: 100%;
+  }
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  /* gap: 4px; */
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-content: space-around;
 }
