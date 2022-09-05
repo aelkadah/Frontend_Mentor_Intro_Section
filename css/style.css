@@ -236,7 +236,7 @@ header .side-nav ul {
   list-style: none;
   color: var(--mediumGray);
   position: relative;
-  padding: 10px 20px;
+  padding: 10px 15px;
 }
 header .side-nav ul .dropBox {
   display: none;
@@ -248,7 +248,7 @@ header .side-nav ul.dropBox li img {
 header .side-nav .btns {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 0 15px;
   text-align: center;
 }
 header .btns a {
