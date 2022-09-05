@@ -1,4 +1,5 @@
 let dropdownLis = document.querySelectorAll(".dropdownLi");
+let dropBoxs = document.querySelectorAll(".dropBox");
 
 function navDrop() {
   dropdownLis.forEach((el) => {
@@ -7,6 +8,9 @@ function navDrop() {
         el.classList.remove("active");
         el.querySelector(".dropBox").classList.remove("active");
       } else {
+        dropBoxs.forEach((box) => {
+          box.classList.remove("active");
+        });
         el.classList.add("active");
         el.querySelector(".dropBox").classList.add("active");
       }
